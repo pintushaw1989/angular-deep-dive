@@ -1,0 +1,13 @@
+<p>Use of Async Pipe. Subscribing the data directly into template.
+  <a href="https://www.youtube.com/watch?v=l5jARPyOlkM" target="_blank">Refrence Video</a>
+</p>
+<div class="row">
+  <div class="col-md-4" *ngFor="let post of (posts$ | async | slice:0:9)">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{post.title}}</h5>
+        <p class="card-text">{{post.body}}</p>
+      </div>
+    </div>
+  </div>
+</div>
