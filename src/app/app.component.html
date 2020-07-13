@@ -9,10 +9,17 @@
   <div class="row">
     <div class="col-md-2 side-nav">
       <ul>
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/change-detection">Change Detection</a></li>
-        <li><a routerLink="/ngzone">NgZone</a></li>
-        <li><a routerLink="/async-pipe">Async Pipe</a></li>
+        <li><a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+        <li><a routerLink="/basic/interpolation" routerLinkActive="active">Interpolation</a></li>
+        <li><a routerLink="/basic/input-output" routerLinkActive="active">@Input-@Output</a></li>
+        <li><a routerLink="/async-pipe" routerLinkActive="active">Async Pipe</a></li>
+        <li><a routerLink="/optimization/change-detection" routerLinkActive="active">Change Detection</a>
+        </li>
+        <li><a routerLink="/optimization/ngzone" routerLinkActive="active">NgZone</a></li>
+        <li><a routerLink="/optimization/pipe" routerLinkActive="active">Pipe Optimization</a></li>
+        <li><a routerLink="/optimization/ng-for" routerLinkActive="active">ngFor Optimization</a></li>
+        <li><a routerLink="/optimization/memoize" routerLinkActive="active">Memoize Optimization</a></li>
+
       </ul>
     </div>
     <div class="col-md-10 main-container">

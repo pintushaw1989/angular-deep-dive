@@ -1,0 +1,22 @@
+<p>Memoize Example.
+  <a href="https://www.youtube.com/watch?v=jfjU1owYxc8&list=PLGuo60snFls5uqjvjYJmtiPvXbEWwpaZN&index=4"
+    target="_blank">Refrence Video</a>
+</p>
+
+<p>{{name}}</p>
+<input class="btn btn-primary" type="button" (click)="name = 'Message changed!'" value="Change message" />
+
+<div>
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <th>Points</th>
+      <th>Title</th>
+    </tr>
+    <tr *ngFor="let user of userList">
+      <td>{{user.name}}</td>
+      <td>{{user.points}}</td>
+      <td>{{getTitle(user.points)}}</td>
+    </tr>
+  </table>
+</div>

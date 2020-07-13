@@ -1,0 +1,10 @@
+<p>ngFor Example.
+  <a href="https://www.youtube.com/watch?v=7MqMyoxMaW4&list=PLGuo60snFls5uqjvjYJmtiPvXbEWwpaZN&index=2"
+    target="_blank">Refrence Video</a>
+</p>
+
+<ul class="list-group">
+  <li *ngFor="let item of collections; trackBy: trackByFn" class="list-group-item">{{item.id}}</li>
+</ul>
+
+<button class="btn btn-primary" type="button" (click)="getItems()">Refresh items</button>
